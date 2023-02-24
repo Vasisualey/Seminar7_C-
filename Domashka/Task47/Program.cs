@@ -25,7 +25,7 @@ double [,] ArrayDouble (int line, int column, int min, int max)
     {
         for (int j = 0; j < column; j++)
         {
-            numArr2D [i, j] = new Random ().Next(min, max) + new Random ().NextDouble (); 
+            numArr2D [i, j] = new Random ().Next(min, max) + new Random ().NextDouble (); // Эта штука для заполнения случайными дробными числами, запомнить!
             numArr2D [i, j] = Math.Round (numArr2D [i, j], 2);// это округление до 2 знаков после запятой, запомнить!
     }
     }
